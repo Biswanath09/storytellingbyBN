@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -72,6 +71,13 @@
       width: 160px;
       height: 160px;
     }
+    .marquee {
+      background-color: #ffebcc;
+      color: #b32d00;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
   </style>
 </head>
 <body>
@@ -83,6 +89,14 @@
     <nav>🎧📖 Kahaniyaan - Audio, Video, PDF ke roop mein</nav>
   </header>
 
+  <!-- 🔔 Top Stories Scrolling Marquee -->
+  <div class="marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      📢 Top Stories: बीज का विश्वास | आख़िरी कप चाय | मोह माया से मुक्ति | दोस्ती की कहानी | सच्चे साधु की प्रेरणा |
+    </marquee>
+  </div>
+
+  <!-- 🎙️ Short Audio/Video Stories -->
   <section>
     <h2>🎙️ Short Audio/Video Stories</h2>
     <ul>
@@ -92,6 +106,7 @@
     </ul>
   </section>
 
+  <!-- 🎧 Long Audio/Video Stories -->
   <section>
     <h2>🎧 Long Audio/Video Stories</h2>
     <ul>
@@ -103,23 +118,38 @@
     </ul>
   </section>
 
+  <!-- 📚 Downloadable PDF Stories -->
   <section>
     <h2>📚 Downloadable PDF Stories</h2>
     <ul>
-     
-    <li>
-      बीज का विश्वास – <a href="https://drive.google.com/file/d/1HddiQtJiKX0_GibGm4HVH3iSUPdMt257/view?usp=drivesdk" target="_blank" download>📥 Download PDF</a>
-    </li>
-    <li><a href="#">Mohan Ki Diary (Coming Soon)</a></li>
-  </ul>
-</section
+      <li>“बीज का विश्वास” – <a href="https://drive.google.com/file/d/1HddiQtJiKX0_GibGm4HVH3iSUPdMt257/view?usp=drivesdk" target="_blank">Download PDF</a></li>
+    </ul>
   </section>
 
+  <!-- 🌼 Bangla Section -->
+  <section>
+    <h2>🌼 বাংলা গল্প (Bangla Stories)</h2>
+    <ul>
+      <li>Coming Soon...</li>
+    </ul>
+  </section>
+
+  <!-- ✨ Shayari / Quotes Section -->
+  <section>
+    <h2>✨ शायरी / Quotes</h2>
+    <ul>
+      <li>“जिनके हौसले बुलंद होते हैं, वो मिट्टी से सोना उगाते हैं।”</li>
+      <li>“कभी हार मत मानो, बड़े सपने वक्त लेते हैं।”</li>
+    </ul>
+  </section>
+
+  <!-- 📱 QR Code Section -->
   <div class="qr">
     <h3>📱 Scan to Visit Website</h3>
     <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://biswanath09.github.io/storytellingbyBN/&size=160x160" alt="QR Code">
   </div>
 
+  <!-- 🔗 Footer -->
   <footer>
     Contact: <a style="color:white;" href="mailto:storytellingbybn@gmail.com">storytellingbybn@gmail.com</a> |
     &copy; 2025 StorytellingbyBN
