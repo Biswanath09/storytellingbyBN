@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta name="google-site-verification" content="GdiCAHrIJwGza14G2JEpfV7CTpkuMp8bzMLeMyKbv1A" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StorytellingbyBN - दिल से दिल तक कहानियाँ</title>
   <meta name="description" content="StorytellingbyBN - Jaha har kahani dil se nikalti hai aur dil tak pahuchti hai. सुनिए और पढ़िए Hindi audio, video और PDF कहानियाँ।">
   <meta name="keywords" content="Hindi stories, Audio stories, Emotional kahaniyan, Video kahani, PDF kahani, storytellingbyBN, adult kahaniyan, inspiration stories">
   <meta name="author" content="StorytellingbyBN">
+  <meta name="google-site-verification" content="GdiCAHrIJwGza14G2JEpfV7CTpkuMp8bzMLeMyKbv1A" />
   <meta property="og:title" content="StorytellingbyBN - दिल से दिल तक कहानियाँ">
   <meta property="og:description" content="Audio, Video aur PDF kahaniyan – Hindi mein! Kahaniyan jo dil chhoo jaayein. Visit: storytellingbyBN">
   <meta property="og:url" content="https://biswanath09.github.io/storytellingbyBN/">
@@ -25,23 +25,42 @@
     header {
       background-color: #b32d00;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
     }
-    header h1 {
-      margin: 0;
+    header img {
+      height: 80px;
     }
     nav {
       margin-top: 10px;
       font-style: italic;
     }
-    section {
-      padding: 20px;
-    }
     h2 {
       color: #b32d00;
       border-bottom: 2px solid #b32d00;
       padding-bottom: 5px;
+    }
+    .accordion {
+      background-color: #f4d8c8;
+      color: #333;
+      cursor: pointer;
+      padding: 15px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .accordion:hover {
+      background-color: #eecab7;
+    }
+    .panel {
+      padding: 15px;
+      display: none;
+      background-color: #fff2e6;
+      overflow: hidden;
     }
     ul {
       list-style: none;
@@ -57,12 +76,6 @@
     a:hover {
       text-decoration: underline;
     }
-    footer {
-      background-color: #b32d00;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
     .qr {
       text-align: center;
       margin: 30px 0;
@@ -71,89 +84,102 @@
       width: 160px;
       height: 160px;
     }
-    .marquee {
-      background-color: #ffebcc;
-      color: #b32d00;
+    footer {
+      background-color: #b32d00;
+      color: white;
+      text-align: center;
       padding: 10px;
-      font-weight: bold;
-      font-size: 18px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="20250712_001253_0000.png" alt="Storytelling by BN Logo" style="height: 80px;">
-    <h1>StorytellingbyBN</h1>
-    <p>Jaha har kahani dil se nikalti hai aur dil tak pahuchti hai</p>
-    <nav>🎧📖 Kahaniyaan - Audio, Video, PDF ke roop mein</nav>
-  </header>
+<header>
+  <img src="20250712_001253_0000.png" alt="Storytelling by BN Logo">
+  <h1>StorytellingbyBN</h1>
+  <p>Jaha har kahani dil se nikalti hai aur dil tak pahuchti hai</p>
+  <nav>🎧📖 Kahaniyaan - Audio, Video, PDF, Bangla aur Shayari ke roop mein</nav>
+</header>
 
-  <!-- 🔔 Top Stories Scrolling Marquee -->
-  <div class="marquee">
-    <marquee behavior="scroll" direction="left" scrollamount="5">
-      📢 Top Stories: बीज का विश्वास | आख़िरी कप चाय | मोह माया से मुक्ति | दोस्ती की कहानी | सच्चे साधु की प्रेरणा |
-    </marquee>
-  </div>
+<!-- Short Stories Section -->
+<button class="accordion">🎙️ Short Audio/Video Stories</button>
+<div class="panel">
+  <ul>
+    <li>छोटा सा खत – <a href="https://youtube.com/shorts/in4gwsmA6g0" target="_blank">Watch</a></li>
+    <li>आख़िरी कप चाय 🍵 – <a href="https://youtube.com/shorts/WvdSbi9GhcE" target="_blank">Watch</a></li>
+    <li>दोस्ती की कहानी ❤️ – <a href="https://youtube.com/shorts/emQBR-RAsAs" target="_blank">Watch</a></li>
+  </ul>
+  <p style="font-style: italic; color: #b32d00;">छोटी कहानियाँ, जो दिल को छू जाएँ</p>
+</div>
 
-  <!-- 🎙️ Short Audio/Video Stories -->
-  <section>
-    <h2>🎙️ Short Audio/Video Stories</h2>
-    <ul>
-      <li>छोटा सा खत – <a href="https://youtube.com/shorts/in4gwsmA6g0?si=LUQbl0W8GpJmfAx7" target="_blank">Watch</a></li>
-      <li>आख़िरी कप चाय 🍵 – <a href="https://youtube.com/shorts/WvdSbi9GhcE?si=PWR9rQjAXfRahzGu" target="_blank">Watch</a></li>
-      <li>दोस्ती की कहानी ❤️ – <a href="https://youtube.com/shorts/emQBR-RAsAs?si=zHPAtWbg7XmYrgWl" target="_blank">Watch</a></li>
-    </ul>
-  </section>
+<!-- Long Stories Section -->
+<button class="accordion">🎧 Long Audio/Video Stories</button>
+<div class="panel">
+  <ul>
+    <li>Soch Badlo, Zindagi Badlegi – <a href="https://youtu.be/8rvPILaXQqk" target="_blank">Watch</a></li>
+    <li>मोह माया से मुक्ति – <a href="https://youtu.be/1ctGP7B_f2o" target="_blank">Watch</a></li>
+    <li>सच्चे साधु की कहानी – <a href="https://youtu.be/FN8OfcfBP8Y" target="_blank">Watch</a></li>
+    <li>अनमोल उपहार – <a href="https://youtu.be/KTjlmKIL1HU" target="_blank">Watch</a></li>
+    <li>सच्ची भक्ति की प्रेरणादायक कहानी – <a href="https://youtu.be/ZuWX8zDTAN0" target="_blank">Watch</a></li>
+  </ul>
+  <p style="font-style: italic; color: #b32d00;">हर कहानी में छुपा है एक गहरा संदेश</p>
+</div>
 
-  <!-- 🎧 Long Audio/Video Stories -->
-  <section>
-    <h2>🎧 Long Audio/Video Stories</h2>
-    <ul>
-      <li>Soch Badlo, Zindagi Badlegi – <a href="https://youtu.be/8rvPILaXQqk?si=F99Ov3o0h6CgLTk3" target="_blank">Watch</a></li>
-      <li>मोह माया से मुक्ति – <a href="https://youtu.be/1ctGP7B_f2o?si=jsi38dk3x0tbq_LO" target="_blank">Watch</a></li>
-      <li>सच्चे साधु की कहानी – <a href="https://youtu.be/FN8OfcfBP8Y?si=gBeeov0MgFIZJ2v1" target="_blank">Watch</a></li>
-      <li>अनमोल उपहार – <a href="https://youtu.be/KTjlmKIL1HU?si=Lw4J2u-mNpU8WvHN" target="_blank">Watch</a></li>
-      <li>सच्ची भक्ति की प्रेरणादायक कहानी – <a href="https://youtu.be/ZuWX8zDTAN0?si=7G4w0PeJDPInixsy" target="_blank">Watch</a></li>
-    </ul>
-  </section>
+<!-- PDF Stories Section -->
+<button class="accordion">📚 Downloadable PDF Stories</button>
+<div class="panel">
+  <ul>
+    <li>“बीज का विश्वास” – <a href="https://drive.google.com/file/d/1HddiQtJiKX0_GibGm4HVH3iSUPdMt257/view?usp=drivesdk" target="_blank">Download</a></li>
+    <li>Mohan Ki Diary – <a href="#" target="_blank">Coming Soon</a></li>
+  </ul>
+  <p style="font-style: italic; color: #b32d00;">पढ़िए उन शब्दों को, जो ज़िंदगी बदल सकते हैं</p>
+</div>
 
-  <!-- 📚 Downloadable PDF Stories -->
-  <section>
-    <h2>📚 Downloadable PDF Stories</h2>
-    <ul>
-      <li>“बीज का विश्वास” – <a href="https://drive.google.com/file/d/1HddiQtJiKX0_GibGm4HVH3iSUPdMt257/view?usp=drivesdk" target="_blank">Download PDF</a></li>
-    </ul>
-  </section>
+<!-- Bangla Section -->
+<button class="accordion">🌼 বাংলা গল্প (Bangla Stories)</button>
+<div class="panel">
+  <ul>
+    <li>Coming Soon…</li>
+  </ul>
+  <p style="font-style: italic; color: #b32d00;">হৃদয়ের গভীরে পৌঁছে যাওয়া বাংলা গল্প</p>
+</div>
 
-  <!-- 🌼 Bangla Section -->
-  <section>
-    <h2>🌼 বাংলা গল্প (Bangla Stories)</h2>
-    <ul>
-      <li>Coming Soon...</li>
-    </ul>
-  </section>
+<!-- Shayari Section -->
+<button class="accordion">✨ Shayari / Quotes</button>
+<div class="panel">
+  <ul>
+    <li>Coming Soon…</li>
+  </ul>
+  <p style="font-style: italic; color: #b32d00;">अल्फाज़ जो जज़्बात बयाँ करें</p>
+</div>
 
-  <!-- ✨ Shayari / Quotes Section -->
-  <section>
-    <h2>✨ शायरी / Quotes</h2>
-    <ul>
-      <li>“जिनके हौसले बुलंद होते हैं, वो मिट्टी से सोना उगाते हैं।”</li>
-      <li>“कभी हार मत मानो, बड़े सपने वक्त लेते हैं।”</li>
-    </ul>
-  </section>
+<!-- QR Code -->
+<div class="qr">
+  <h3>📱 Scan to Visit Website</h3>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://biswanath09.github.io/storytellingbyBN/&size=160x160" alt="QR Code">
+</div>
 
-  <!-- 📱 QR Code Section -->
-  <div class="qr">
-    <h3>📱 Scan to Visit Website</h3>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://biswanath09.github.io/storytellingbyBN/&size=160x160" alt="QR Code">
-  </div>
+<!-- Footer -->
+<footer>
+  Contact: <a style="color:white;" href="mailto:storytellingbybn@gmail.com">storytellingbybn@gmail.com</a> |
+  &copy; 2025 StorytellingbyBN
+</footer>
 
-  <!-- 🔗 Footer -->
-  <footer>
-    Contact: <a style="color:white;" href="mailto:storytellingbybn@gmail.com">storytellingbybn@gmail.com</a> |
-    &copy; 2025 StorytellingbyBN
-  </footer>
+<!-- Accordion Script -->
+<script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
