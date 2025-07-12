@@ -35,32 +35,16 @@
       margin-top: 10px;
       font-style: italic;
     }
+    section {
+      padding: 20px;
+      background-color: #fff2e6;
+      margin: 10px 20px;
+      border-radius: 10px;
+    }
     h2 {
       color: #b32d00;
       border-bottom: 2px solid #b32d00;
       padding-bottom: 5px;
-    }
-    .accordion {
-      background-color: #f4d8c8;
-      color: #333;
-      cursor: pointer;
-      padding: 15px;
-      width: 100%;
-      text-align: left;
-      border: none;
-      outline: none;
-      transition: background-color 0.3s ease;
-      font-size: 16px;
-      font-weight: bold;
-    }
-    .accordion:hover {
-      background-color: #eecab7;
-    }
-    .panel {
-      padding: 15px;
-      display: none;
-      background-color: #fff2e6;
-      overflow: hidden;
     }
     ul {
       list-style: none;
@@ -75,6 +59,11 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+    .tagline {
+      font-style: italic;
+      color: #b32d00;
+      margin-top: 10px;
     }
     .qr {
       text-align: center;
@@ -101,20 +90,18 @@
   <nav>🎧📖 Kahaniyaan - Audio, Video, PDF, Bangla aur Shayari ke roop mein</nav>
 </header>
 
-<!-- Short Stories Section -->
-<button class="accordion">🎙️ Short Audio/Video Stories</button>
-<div class="panel">
+<section>
+  <h2>🎙️ Short Audio/Video Stories</h2>
   <ul>
     <li>छोटा सा खत – <a href="https://youtube.com/shorts/in4gwsmA6g0" target="_blank">Watch</a></li>
     <li>आख़िरी कप चाय 🍵 – <a href="https://youtube.com/shorts/WvdSbi9GhcE" target="_blank">Watch</a></li>
     <li>दोस्ती की कहानी ❤️ – <a href="https://youtube.com/shorts/emQBR-RAsAs" target="_blank">Watch</a></li>
   </ul>
-  <p style="font-style: italic; color: #b32d00;">छोटी कहानियाँ, जो दिल को छू जाएँ</p>
-</div>
+  <div class="tagline">छोटी कहानियाँ, जो दिल को छू जाएँ</div>
+</section>
 
-<!-- Long Stories Section -->
-<button class="accordion">🎧 Long Audio/Video Stories</button>
-<div class="panel">
+<section>
+  <h2>🎧 Long Audio/Video Stories</h2>
   <ul>
     <li>Soch Badlo, Zindagi Badlegi – <a href="https://youtu.be/8rvPILaXQqk" target="_blank">Watch</a></li>
     <li>मोह माया से मुक्ति – <a href="https://youtu.be/1ctGP7B_f2o" target="_blank">Watch</a></li>
@@ -122,64 +109,43 @@
     <li>अनमोल उपहार – <a href="https://youtu.be/KTjlmKIL1HU" target="_blank">Watch</a></li>
     <li>सच्ची भक्ति की प्रेरणादायक कहानी – <a href="https://youtu.be/ZuWX8zDTAN0" target="_blank">Watch</a></li>
   </ul>
-  <p style="font-style: italic; color: #b32d00;">हर कहानी में छुपा है एक गहरा संदेश</p>
-</div>
+  <div class="tagline">हर कहानी में छुपा है एक गहरा संदेश</div>
+</section>
 
-<!-- PDF Stories Section -->
-<button class="accordion">📚 Downloadable PDF Stories</button>
-<div class="panel">
+<section>
+  <h2>📚 Downloadable PDF Stories</h2>
   <ul>
     <li>“बीज का विश्वास” – <a href="https://drive.google.com/file/d/1HddiQtJiKX0_GibGm4HVH3iSUPdMt257/view?usp=drivesdk" target="_blank">Download</a></li>
-    <li>Mohan Ki Diary – <a href="#" target="_blank">Coming Soon</a></li>
+    <li>Mohan Ki Diary – <a href="#">Coming Soon</a></li>
   </ul>
-  <p style="font-style: italic; color: #b32d00;">पढ़िए उन शब्दों को, जो ज़िंदगी बदल सकते हैं</p>
-</div>
+  <div class="tagline">पढ़िए उन शब्दों को, जो ज़िंदगी बदल सकते हैं</div>
+</section>
 
-<!-- Bangla Section -->
-<button class="accordion">🌼 বাংলা গল্প (Bangla Stories)</button>
-<div class="panel">
+<section>
+  <h2>🌼 বাংলা গল্প (Bangla Stories)</h2>
   <ul>
     <li>Coming Soon…</li>
   </ul>
-  <p style="font-style: italic; color: #b32d00;">হৃদয়ের গভীরে পৌঁছে যাওয়া বাংলা গল্প</p>
-</div>
+  <div class="tagline">হৃদয়ের গভীরে পৌঁছে যাওয়া বাংলা গল্প</div>
+</section>
 
-<!-- Shayari Section -->
-<button class="accordion">✨ Shayari / Quotes</button>
-<div class="panel">
+<section>
+  <h2>✨ Shayari / Quotes</h2>
   <ul>
     <li>Coming Soon…</li>
   </ul>
-  <p style="font-style: italic; color: #b32d00;">अल्फाज़ जो जज़्बात बयाँ करें</p>
-</div>
+  <div class="tagline">अल्फाज़ जो जज़्बात बयाँ करें</div>
+</section>
 
-<!-- QR Code -->
 <div class="qr">
   <h3>📱 Scan to Visit Website</h3>
   <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://biswanath09.github.io/storytellingbyBN/&size=160x160" alt="QR Code">
 </div>
 
-<!-- Footer -->
 <footer>
   Contact: <a style="color:white;" href="mailto:storytellingbybn@gmail.com">storytellingbybn@gmail.com</a> |
   &copy; 2025 StorytellingbyBN
 </footer>
-
-<!-- Accordion Script -->
-<script>
-  const acc = document.getElementsByClassName("accordion");
-  for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-</script>
 
 </body>
 </html>
