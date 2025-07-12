@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -54,6 +53,7 @@
     }
     h2 .emoji {
       animation: blink 1.2s infinite;
+      margin-left: 5px;
     }
     @keyframes blink {
       0% { opacity: 1; }
@@ -118,7 +118,7 @@
   </div>
 
   <section onclick="toggleContent('short')">
-    <h2><span class="emoji">🎙️</span> Short Audio/Video Stories</h2>
+    <h2><span class="emoji">🎙️ क्लिक करें 🔔</span> Short Audio/Video Stories <span class="emoji">🆕</span></h2>
     <div class="tagline">छोटी कहानियाँ, जो दिल को छू जाएँ</div>
     <div id="short" class="content">
       <ul>
@@ -130,7 +130,7 @@
   </section>
 
   <section onclick="toggleContent('long')">
-    <h2><span class="emoji">🎧</span> Long Audio/Video Stories</h2>
+    <h2><span class="emoji">🎧 क्लिक करें 🔔</span> Long Audio/Video Stories <span class="emoji">🆕</span></h2>
     <div class="tagline">हर कहानी में छुपा है एक गहरा संदेश</div>
     <div id="long" class="content">
       <ul>
@@ -144,7 +144,7 @@
   </section>
 
   <section onclick="toggleContent('pdf')">
-    <h2><span class="emoji">📚</span> Downloadable PDF Stories</h2>
+    <h2><span class="emoji">📚 क्लिक करें 🔔</span> Downloadable PDF Stories <span class="emoji">🆕</span></h2>
     <div class="tagline">पढ़िए उन शब्दों को, जो ज़िंदगी बदल सकते हैं</div>
     <div id="pdf" class="content">
       <ul>
@@ -155,7 +155,7 @@
   </section>
 
   <section onclick="toggleContent('bangla')">
-    <h2><span class="emoji">🌼</span> বাংলা গল্প (Bangla Stories)</h2>
+    <h2><span class="emoji">🌼 क्लिक करें 🔔</span> বাংলা গল্প (Bangla Stories) <span class="emoji">🆕</span></h2>
     <div class="tagline">হৃদয়ের গভীরে পৌঁছে যাওয়া বাংলা গল্প</div>
     <div id="bangla" class="content">
       <ul>
@@ -165,7 +165,7 @@
   </section>
 
   <section onclick="toggleContent('shayari')">
-    <h2><span class="emoji">✨</span> Shayari / Quotes</h2>
+    <h2><span class="emoji">✨ क्लिक करें 🔔</span> Shayari / Quotes <span class="emoji">🆕</span></h2>
     <div class="tagline">अल्फाज़ जो जज़्बात बयाँ करें</div>
     <div id="shayari" class="content">
       <ul>
@@ -193,6 +193,17 @@
     &copy; 2025 StorytellingbyBN
   </footer>
 
+  <!-- 🎵 Background Music Play Button Section -->
+  <div style="text-align: center; margin: 20px;">
+    <button id="playBtn" style="background-color:#b32d00; color:white; padding:10px 20px; border:none; border-radius:10px; cursor:pointer; font-size:16px;">
+      🎵 Play Background Music
+    </button>
+    <audio id="bgMusic" loop>
+      <source src="https://drive.google.com/uc?export=download&id=1ISiu679gK5t7FhHjrfnXd4CB1TWGqrT4" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
   <script>
     function toggleContent(id) {
       const content = document.getElementById(id);
@@ -202,6 +213,22 @@
       });
       content.style.display = content.style.display === 'block' ? 'none' : 'block';
     }
+
+    // 🎵 Background music play/pause logic
+    const playBtn = document.getElementById('playBtn');
+    const bgMusic = document.getElementById('bgMusic');
+    let isPlaying = false;
+
+    playBtn.addEventListener('click', () => {
+      if (!isPlaying) {
+        bgMusic.play();
+        playBtn.textContent = '⏸️ Pause Background Music';
+      } else {
+        bgMusic.pause();
+        playBtn.textContent = '🎵 Play Background Music';
+      }
+      isPlaying = !isPlaying;
+    });
   </script>
 </body>
 </html>
