@@ -103,6 +103,19 @@
       padding: 10px;
       font-weight: bold;
     }
+    .music-btn {
+      text-align:center;
+      margin-top: 10px;
+    }
+    .music-btn button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #b32d00;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -116,6 +129,20 @@
   <div class="marquee">
     <marquee behavior="scroll" direction="left">Top Stories: छोटा सा खत | मोह माया से मुक्ति | बीज का विश्वास | Mohan Ki Diary (Coming Soon)</marquee>
   </div>
+
+  <!-- ✅ MUSIC SECTION START -->
+  <section>
+    <h2><span class="emoji">🎵</span> Background Music <span class="emoji">🔊</span></h2>
+    <div class="tagline">शांतिपूर्ण संगीत के साथ अनुभव को बेहतर बनाएं</div>
+    <div class="music-btn">
+      <button onclick="playMusic()">▶️ Click to Play / Pause Music</button>
+      <audio id="bgMusic">
+        <source src="https://docs.google.com/uc?export=open&id=1IT5LpGmsOR-dWgJ9Nj1n4nnhH6OS5l1U" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+  <!-- ✅ MUSIC SECTION END -->
 
   <section onclick="toggleContent('short')">
     <h2><span class="emoji">🎙️ क्लिक करें 🔔</span> Short Audio/Video Stories <span class="emoji">🆕</span></h2>
@@ -193,17 +220,6 @@
     &copy; 2025 StorytellingbyBN
   </footer>
 
-  <!-- 🎵 Background Music Play Button Section -->
-  <div style="text-align: center; margin: 20px;">
-    <button id="playBtn" style="background-color:#b32d00; color:white; padding:10px 20px; border:none; border-radius:10px; cursor:pointer; font-size:16px;">
-      🎵 Play Background Music
-    </button>
-    <audio id="bgMusic" loop>
-      <source src="https://drive.google.com/uc?export=download&id=1ISiu679gK5t7FhHjrfnXd4CB1TWGqrT4" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-
   <script>
     function toggleContent(id) {
       const content = document.getElementById(id);
@@ -214,21 +230,14 @@
       content.style.display = content.style.display === 'block' ? 'none' : 'block';
     }
 
-    // 🎵 Background music play/pause logic
-    const playBtn = document.getElementById('playBtn');
-    const bgMusic = document.getElementById('bgMusic');
-    let isPlaying = https://drive.google.com/file/d/1ISiu679gK5t7FhHjrfnXd4CB1TWGqrT4/view?usp=drivesdk;
-
-    playBtn.addEventListener('click', () => {
-      if (!isPlaying) {
-        bgMusic.play();
-        playBtn.textContent = '⏸️ Pause Background Music';
+    function playMusic() {
+      const music = document.getElementById('bgMusic');
+      if (music.paused) {
+        music.play();
       } else {
-        bgMusic.pause();
-        playBtn.textContent = '🎵 Play Background Music';
+        music.pause();
       }
-      isPlaying = !isPlaying;
-    });
+    }
   </script>
 </body>
 </html>
